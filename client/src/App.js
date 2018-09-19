@@ -1,13 +1,13 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
-import Apps from './components/Apps'
 import NoMatch from './components/NoMatch'
+import FetchApps from './components/FetchApps'
 
 const App = () => (
   <Switch>
     <Route exact path="/" component={Home} />
-    <Route exact path="/apps" component={Apps} />
+    <Route path="/apps" component={FetchApps} />
     <Route component={NoMatch} />
   </Switch>
 )
