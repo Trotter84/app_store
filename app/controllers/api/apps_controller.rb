@@ -47,5 +47,4 @@ class Api::AppsController < ApplicationController
         :featured
       )
     end
-
 end
